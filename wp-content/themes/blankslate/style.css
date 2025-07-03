@@ -261,7 +261,7 @@ a {text-decoration: none;color: inherit;}
     height: auto;
 }
 
-.processStep .wp-block-group .wp-block-group {
+.processStep {
     padding-top: 40px;
     background: white;
     border-radius: 20px;
@@ -289,6 +289,10 @@ a {text-decoration: none;color: inherit;}
 .processStep ul.cat li {
     background: var(--Green-Lite, #FFE4ED);
     padding: 10px 16px 6px;
+}
+
+.wp-block-group {
+    background: none!important;;
 }
 
 .wp-block-media-text {
@@ -428,7 +432,6 @@ a {text-decoration: none;color: inherit;}
         padding: 30px;
     }
 
-    /* Touch scrolling fallback */
     .carousel-wrapper.touch-scroll {
         overflow-x: auto;
         scroll-snap-type: x mandatory;
