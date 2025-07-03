@@ -256,6 +256,11 @@ a {text-decoration: none;color: inherit;}
     position: relative;
 }
 
+.entry-summary-image img {
+    width: 100%;
+    height: auto;
+}
+
 .processStep .wp-block-group .wp-block-group {
     padding-top: 40px;
     background: white;

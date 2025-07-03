@@ -72,7 +72,7 @@
     <div class="carousel l-content-float" data-cols="1">
         <div class="carousel-wrapper">
             <?php 
-            $args = array('post_type' => 'resume-item', 'posts_per_page' => -1, 'orderby' => 'date', 'order' => 'DESC', );
+            $args = array('post_type' => 'resume-item', 'posts_per_page' => -1, 'orderby' => 'date', 'order' => 'ASC', );
             $resume_query = new WP_Query($args);
             if ($resume_query->have_posts()) : ?>
                 <?php while ($resume_query->have_posts()) : $resume_query->the_post(); ?>
