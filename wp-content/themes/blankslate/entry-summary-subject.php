@@ -1,3 +1,4 @@
+<a href="<?php the_permalink(); ?>" class="item-link">
 <div class="item">
     <div class="text">
         <div class="l-text-flex">
@@ -14,3 +15,4 @@
         </div>
     </div>
 </div>
+</a>

@@ -8,9 +8,9 @@
             $review_query = new WP_Query($args);
             if ($review_query->have_posts()) : 
                 while ($review_query->have_posts()) : $review_query->the_post(); ?>
-                    <a href="<?php the_permalink(); ?>" class="carousel-item">
+                    <div class="carousel-item">
                         <?php get_template_part( 'entry-summary-subject' ); ?>
-                    </a>
+                    </div>
                 <?php endwhile; ?>
                 <?php wp_reset_postdata(); ?>
             <?php else : ?>
