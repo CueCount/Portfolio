@@ -1,9 +1,9 @@
-<header id="header" role="banner" class="container-fullWidth entry-header" style="background-image: url('<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>');background-size:cover;">
+<header id="header" role="banner" class="container-fullWidth entry-header" style="">
 
     <div class="container-content header-padding">
         <div class="container-text-01">
             <p class="small tag pink">
-                James Mocko, Data Engineer, Sophisticated Visual Storyteller
+                James Mocko, Digital Designer with UX/UI Experience
             </p>
             <div class="highlight">
                 <h1><?php the_title(); ?></h1>

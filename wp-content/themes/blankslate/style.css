@@ -40,7 +40,6 @@ a {text-decoration: none;color: inherit;}
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - 
     COLOR SCHEMES
 - - - - - - - - - - - - - - - - - - - - - - - - - - */
-.pink-lite-background{background:#F9F0F7;}
 .pink-lite{color:#FEEBF8;}
 .pink-background{background: var(--Pink, #ED3487);}
 .pink{color: var(--Pink, #ED3487);}
