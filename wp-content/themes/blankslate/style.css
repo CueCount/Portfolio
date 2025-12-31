@@ -16,7 +16,7 @@ h1,h2,h3,p,p.small,li,a,a.button,button {
     line-height: normal;
 }
 p,p.small {
-    font-family: "Kufam", serif;
+    font-family: "Quicksand", serif;
     font-weight: 400;
     font-style: normal;
     line-height: normal;
@@ -26,7 +26,10 @@ h2{font-size: 22px;line-height:28px;}
 h3{font-size: 18px;line-height:23px;}
 p{font-family: "Quicksand", serif;font-size: 16px;line-height:21px;letter-spacing: .5px;}
 a {text-decoration: none;color: inherit;}
-.review h3 p {font-size: 18px;line-height:23px;font-family: "Kufam", serif;
+.review h3 p {
+    font-size: 18px;
+    line-height:23px;
+    font-family: "Quicksand", serif;
     font-weight: 400;
     font-style: normal;
     line-height: normal;}
@@ -138,7 +141,7 @@ a {text-decoration: none;color: inherit;}
 }
 
 .header-padding {
-    padding: 100px 40px;
+    padding: 100px 60px;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -161,7 +164,7 @@ a {text-decoration: none;color: inherit;}
     margin-right: 15px; /* Optional: adds space between text and arrow */
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 10px;
 }
 
 .r-arrow-flex {
@@ -226,15 +229,15 @@ a {text-decoration: none;color: inherit;}
 
 .carousel-item {
     background: white;
-    border-radius: 20px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+    border: 1px solid #ababab;
     overflow: hidden;
 }
 
 .carousel-item:hover {
-    border:2px solid #ED3487;
-    margin: -2px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    border:1px solid #ED3487;
+    background: #ED3487;
+    color: #FFF;
 }
 
 
@@ -359,8 +362,6 @@ a {text-decoration: none;color: inherit;}
     align-items: center;
     gap: 5px;
     flex: 1 0 0;
-    border-radius: 10px;
-    border: 1.5px solid var(--Pink, #FF244C);
     background: #FFF;
 }
 

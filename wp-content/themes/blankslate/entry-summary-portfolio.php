@@ -10,14 +10,11 @@
             <h3 class="entry-title">
                 <?php the_title(); ?>
             </h3>
-
-            <div class="cat">
-                <?php $categories = get_the_category();
-                if ( ! empty( $categories ) ) {foreach ( $categories as $category ) {echo '<li class="tag pill pink">' . esc_html( $category->name ) . '</li> ';}}?>
-            </div>
         </div>
         <div class="r-arrow-flex">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/arrow.svg" alt="View Project" class="arrow">
+            <svg class="chevron-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" role="img">
+                <path d="M9 18l6-6-6-6" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
         </div>
     </div>
 </div>

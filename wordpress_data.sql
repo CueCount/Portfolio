@@ -19,6 +19,9 @@
 -- Dumping data for table `wp_commentmeta`
 --
 
+SET GLOBAL foreign_key_checks = 0;
+SET sql_mode='NO_AUTO_VALUE_ON_ZERO';
+
 LOCK TABLES `wp_commentmeta` WRITE;
 /*!40000 ALTER TABLE `wp_commentmeta` DISABLE KEYS */;
 /*!40000 ALTER TABLE `wp_commentmeta` ENABLE KEYS */;

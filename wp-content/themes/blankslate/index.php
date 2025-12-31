@@ -24,7 +24,7 @@
     <div class="carousel" data-cols="2">
         <div class="carousel-wrapper">
             <?php 
-            $args = array('post_type' => 'reveiw-item', 'posts_per_page' => -1, );
+            $args = array('post_type' => 'review-item', 'posts_per_page' => -1, );
             $review_query = new WP_Query($args);
             if ($review_query->have_posts()) : 
                 while ($review_query->have_posts()) : $review_query->the_post();?>
@@ -86,16 +86,21 @@
             <?php endif; ?>
         </div>
     </div>
+
     <div class="carousel r-sidebar-float" data-cols="1">
         <div class="carousel-wrapper">
             <?php 
-            $args = array('post_type' => 'reveiw-item', 'posts_per_page' => -1, );
+            $args = array('post_type' => 'skill', 'posts_per_page' => -1, );
             $review_query = new WP_Query($args);
             if ($review_query->have_posts()) : 
-                while ($review_query->have_posts()) : $review_query->the_post();?>
-                    <div class="carousel-item-review">
-                        <?php get_template_part( 'entry-summary-review' ); ?>
+                while ($review_query->have_posts()) : $review_query->the_post(); ?>
+                <div class="item">
+                    <div class="text">
+                        <h3 class="entry-title">
+                            <?php the_title(); ?>
+                        </h3>
                     </div>
+                </div>
                 <?php endwhile; ?>
                 <?php wp_reset_postdata(); ?>
             <?php else : ?>
