@@ -1,0 +1,82 @@
+/* Carousel Navigation Styles */
+/* Add this to your theme's stylesheet */
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Base carousel wrapper - horizontal layout */
+.carousel.carousel-active .carousel-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+
+/* Each item takes full width when cols=1 */
+.carousel.carousel-active[data-cols="1"] .carousel-item {
+    flex: 0 0 100%;
+    min-width: 100%;
+}
+
+/* 2 columns */
+.carousel.carousel-active[data-cols="2"] .carousel-item {
+    flex: 0 0 calc(50% - 15px);
+    min-width: calc(50% - 15px);
+}
+
+/* 3 columns */
+.carousel.carousel-active[data-cols="3"] .carousel-item {
+    flex: 0 0 calc(33.333% - 20px);
+    min-width: calc(33.333% - 20px);
+}
+
+/* Mobile: always 1 item */
+@media (max-width: 768px) {
+    .carousel.carousel-active .carousel-item {
+        flex: 0 0 100% !important;
+        min-width: 100% !important;
+    }
+}
+
+/* Dots Indicator */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.2s ease;
+}
+
+.carousel-dot:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.carousel-dot.active {
+    background: rgba(0, 0, 0, 0.7);
+    transform: scale(1.2);
+}
+
+/* Hide dots when carousel is not active */
+.carousel:not(.carousel-active) .carousel-dots {
+    display: none;
+}
+
+/* Ensure wrapper has proper styling for carousel mode */
+.carousel.carousel-active .carousel-wrapper {
+    cursor: grab;
+}
+
+.carousel.carousel-active .carousel-wrapper:active {
+    cursor: grabbing;
+}

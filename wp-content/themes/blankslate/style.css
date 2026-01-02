@@ -23,7 +23,7 @@ p,p.small {
 }
 h1{font-size: 28px;line-height:34px;}
 h2{font-size: 22px;line-height:28px;}
-h3{font-size: 18px;line-height:23px;}
+h3{font-size: 18px;line-height:23px;margin-top:2px;}
 p{font-family: "Quicksand", serif;font-size: 16px;line-height:21px;letter-spacing: .5px;}
 a {text-decoration: none;color: inherit;}
 .review h3 p {
@@ -59,7 +59,7 @@ a {text-decoration: none;color: inherit;}
     width: 100%;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 60px;
     overflow: hidden;
 }
 
@@ -136,12 +136,10 @@ a {text-decoration: none;color: inherit;}
     align-items: flex-start;
     gap: 14px;
     background: white;
-    border-radius: 20px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
 
 .header-padding {
-    padding: 100px 60px;
+    padding: 100px 34px;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -243,7 +241,7 @@ a {text-decoration: none;color: inherit;}
 
 .text {
     display: flex;
-    padding: 40px;
+    padding: 34px 14px;
     flex-direction: row;
     gap: 10px;
     align-self: stretch;
@@ -264,11 +262,7 @@ a {text-decoration: none;color: inherit;}
 }
 
 .processStep {
-    padding-top: 40px;
-    background: white!important;
-    border-radius: 20px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-    overflow:hidden;
+    padding-top:40px;
 }
 
 .processStep .wp-block-gallery{
@@ -293,15 +287,24 @@ a {text-decoration: none;color: inherit;}
     padding: 10px 16px 6px;
 }
 
-.wp-block-media-text {
+.wp-block-media-text, .processStep {
     background: white;
-    border-radius: 20px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ababab;
     overflow:hidden;
 }
 
 .wp-block-media-text>.wp-block-media-text__content {
     padding: 40px 60px;
+}
+
+.carousel-item-review{
+    border:0px!important;
+}
+
+.carousel-item-review:hover{
+    border:0px!important;
+    background:#FFF;
+    color:#391A2A;
 }
 
 .resume-item {
@@ -338,12 +341,13 @@ a {text-decoration: none;color: inherit;}
 }
 
 .review .text {
-    padding: 0 40px;
+    padding: 0 14px;
 }
 
 .r-sidebar-float {
     width: 370px;
     float: right;
+    padding: 0 40px;
 }
 
 .l-content-float {
@@ -353,6 +357,17 @@ a {text-decoration: none;color: inherit;}
 
 .nav-links {
     display: none !important;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+}
+
+svg.chevron-icon {
+    width:30px;
+    height: auto;
 }
 
 .bottom-nav-button {

@@ -186,8 +186,17 @@ function get_manual_anchors_from_content($content) {
     }
 }
 add_action('pre_get_posts', 'filter_articles');
-function enqueue_carousel_script() {
+function enqueue_carousel_assets() {
     if (is_home() || (is_page() && isset($_GET['category']))) {
+        // Enqueue carousel CSS
+        wp_enqueue_style(
+            'carousel-style',
+            get_template_directory_uri() . '/css/carousel-nav.css',
+            array(),
+            null
+        );
+        
+        // Enqueue carousel JS
         wp_enqueue_script(
             'carousel-script',
             get_template_directory_uri() . '/js/carousel.js',
@@ -197,4 +206,4 @@ function enqueue_carousel_script() {
         );
     }
 }
-add_action('wp_enqueue_scripts', 'enqueue_carousel_script');
+add_action('wp_enqueue_scripts', 'enqueue_carousel_assets');
